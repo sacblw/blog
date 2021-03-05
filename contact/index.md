@@ -6,24 +6,29 @@ eleventyNavigation:
   key: Contact
   order: 3
 ---
-
-<form name="contact" method="POST" data-netlify="true">
-  <p>
-    <label>Your Name: <input type="text" name="name" required /></label>   
-  </p>
-  <p>
-    <label>Your Email: <input type="email" name="email" required/></label>
-  </p>
-  <p>
-    <label>Your Role: <select name="role[]" multiple required>
-      <option value="leader">Leader</option>
-      <option value="follower">Follower</option>
-    </select></label>
-  </p>
-  <p>
-    <label>Message: <textarea name="message"></textarea></label>
-  </p>
-  <p>
-    <button type="submit">Send</button>
-  </p>
-</form>
+<div class="container">
+  <div class="row">
+    <form name="contact" method="POST" data-netlify="true">
+    <div class="col">
+        <label class="form-label">Your Name: <input type="text" name="name" class="form-control" required /></label>   
+    </div>
+    <div class="col">
+        <label class="form-label" >Your Email: <input type="email" name="email" class="form-control" required/></label>
+    </div>
+    <div class="col">
+        <label class="form-label" >Your Role: </label>
+        <select name="role[]" class="form-select" required>
+        <option value="leader" selected>Leader</option>
+        <option value="follower">Follower</option>
+        </select>
+    </div>
+    <div class="col">
+        <label class="form-label" >Message: </label>
+        <textarea name="message" class="form-control" rows="3"></textarea>
+    </div>
+    <div class="col">
+        <button type="submit" class="btn btn-primary">Send</button>
+    </div>
+    </form>
+  </div>
+</div>
