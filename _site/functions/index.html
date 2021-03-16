@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tagged “number-2”</title>
+    <title>Functions</title>
     <meta name="description" content="I am writing about my experiences as a naval navel-gazer.">
     <link rel="stylesheet" href="/css/index.css">
     <link rel="stylesheet" href="/css/prism-base16-monokai.dark.css">
@@ -20,29 +20,104 @@
         <li class="nav-item"><a href="/posts/">Archive</a></li>
         <li class="nav-item"><a href="/about/">My Profile</a></li>
         <li class="nav-item"><a href="/contact/">Contact</a></li>
-        <li class="nav-item"><a href="/functions/">Functions</a></li>
+        <li class="nav-item nav-item-active"><a href="/functions/">Functions</a></li>
       </ul>
     </header>
 
-    <main class="tmpl-home container">
+    <main class="tmpl-post container">
 
-      <h1>Tagged “number-2”</h1>
+      <h1>Functions</h1>
 
+<script>
+/*
+function outputMessage() {
+    console.log('Output Message');
+};
 
-<ol reversed class="postlist" style="counter-reset: start-from 2">
-
-  <li class="postlist-item">
-    <a href="/posts/secondpost/" class="postlist-link">This is my second post.</a>
-    <time class="postlist-date" datetime="2018-07-04">04 Jul 2018</time>
-    
-      <a href="/tags/number-2/" class="post-tag">number-2</a>
-  </li>
-
-</ol>
+console.log('Task 1 Start');
+console.log('-------------');
 
 
-<p>See <a href="/tags/">all tags</a>.</p>
+outputMessage();
 
+console.log('-------------');
+console.log('Task 1 End');
+
+
+console.log('--------------------------------------------------------');
+
+
+
+function combineStrings(string1, string2) {
+    console.log(string1 + " " + string2);
+}
+
+console.log('Task 2 Start');
+console.log('-------------');
+
+var fName = 'Hello'; 
+var lName = 'World';
+
+//This is how we pass arguments to a function
+combineStrings(fName, lName);
+
+
+console.log('-------------');
+console.log('Task 2 End');
+
+console.log('--------------------------------------------------------');
+
+
+
+function combineStringsAndReturn(string1, string2) {
+    var combinedStrings = string1 + " " + string2;
+    return combinedStrings;
+}
+
+console.log('Task 3 Start');
+console.log('-------------');
+
+var fName = 'Sarah'; 
+var lName = 'Carr';
+
+var names = combineStringsAndReturn(fName, lName);
+
+//console.log(combinedStrings);
+
+console.log('-------------');
+console.log('Task 3 End');
+
+*/
+
+// Both comparisons have to be true && 
+// One comparisons have to be true || 
+
+function shouldIPutOnACoat(temp) {
+
+    console.log(temp < 30);
+
+    if (temp <= 50 && temp > 30) { //temp less than or equal to 50 && temp greater than 30 
+        var message = "Put On A Coat";
+    } else if (temp <= 30 && temp != 0) {
+        var message = "Put On A Coat & Hat";
+    } else if (temp === 0 ) { 
+        var message = "Stay Inside";
+    } else {
+        var message = "Pants & Vest is fine";
+    }
+
+    return message;
+};
+
+var temp = 0;
+
+console.log(shouldIPutOnACoat(temp));
+
+</script>
+
+<hr>
+<ul>
+</ul>
 
     </main>
 
@@ -52,7 +127,7 @@
       </div>
     </footer>
 
-    <!-- Current page: /tags/number-2/ -->
+    <!-- Current page: /functions/ -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
     <script>
   if (window.netlifyIdentity) {

@@ -52,17 +52,17 @@
   </url>
   
   <url>
-    <loc>https://example.com/tags/another-tag/</loc>
-    <lastmod>2021-03-03</lastmod>
-  </url>
-  
-  <url>
     <loc>https://example.com/tags/second-tag/</loc>
     <lastmod>2021-03-03</lastmod>
   </url>
   
   <url>
     <loc>https://example.com/tags/number-2/</loc>
+    <lastmod>2021-03-03</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/tags/another-tag/</loc>
     <lastmod>2021-03-03</lastmod>
   </url>
   
@@ -74,5 +74,10 @@
   <url>
     <loc>https://example.com/contact/</loc>
     <lastmod>2021-03-05</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/functions/</loc>
+    <lastmod>2021-03-10</lastmod>
   </url>
 </urlset>
